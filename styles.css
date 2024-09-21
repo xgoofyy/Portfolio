@@ -46,7 +46,7 @@ header {
 
 .navbar a, button {
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 250;
 
     margin-left: 25px;
@@ -57,7 +57,7 @@ header {
 
 button {
     border-radius: 100px;
-    width: 100px;
+    width: 120px;
     padding: 3px;
     background-color: #77aaff;
 }
