@@ -1,0 +1,120 @@
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px 0px 50px 0px;    
+}
+
+
+#Arnold {
+    width: 600px;
+    height: auto;
+    clip-path: circle();
+    border: 5px solid #3982ff;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.hero_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 100px;
+    margin-bottom: -30px;
+}
+
+#name {
+    color:#3982ff;
+}
+
+.home:hover #name { /*triggers glow animation when hovered over home*/
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 0px #004ed6;
+    }
+
+    to {
+        text-shadow: 0 0 15px #004ed6, 0 0 0px #004ed6;
+    }
+}
+
+.home h2 {
+    font-size: 60px;
+}
+
+.text_scroll {
+    box-sizing: content-box;
+    display: flex;
+
+    height: 83px;
+}
+
+.words {
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.words span{
+    color: #3982ff;
+    display: block;
+    padding-left: 10px;
+
+    animation: word_spin 8s infinite;
+}
+
+@keyframes word_spin { /* "I am a... " text animation */
+    12% {
+        transform: translateY(-105%);
+    }
+    20% {
+        transform: translateY(-100%);
+    }
+    32% {
+        transform: translateY(-205%);
+    }
+    40% {
+        transform: translateY(-200%);
+    }
+    52% {
+        transform: translateY(-305%);
+    }
+    60% {
+        transform: translateY(-300%);
+    }
+    72% {
+        transform: translateY(-405%);
+    }
+    80% {
+        transform: translateY(-400%);
+    }
+    92% {
+        transform: translateY(-505%);
+    }
+    100% {
+        transform: translateY(-500%);
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.links i {
+    font-size: 35px;
+    margin-right: 20px;
+
+    transition: .3s ease;
+}
+
+.links i:hover {
+    transform: scale(1.2);
+    color:#3982ff;
+}
