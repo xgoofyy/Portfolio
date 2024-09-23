@@ -119,7 +119,7 @@
     color:#3982ff;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1440px) {
     #Arnold {
         width: 400px;
         height: auto;
@@ -139,10 +139,42 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .home {
         flex-direction: column;
         align-items: center;
         gap: 50px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Arnold {
+        width: 300px;
+        height: auto;
+    }
+    
+    .home h1 {
+        font-size: 35px;
+        margin-bottom: -10px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+    }
+
+    .text_scroll {
+        height: 45px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
     }
 }
