@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
+    padding-top: 70px;
 }
 
 header {
@@ -26,12 +27,18 @@ header {
     justify-content: space-between;
     /* background-color: red; */
 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #141414;
+
     align-items: center;
 }
 
 .logo {
     transition: .3s ease;
-    
 }
 
 .logo a {
@@ -80,22 +87,32 @@ button:hover {
     header {
         margin: 0 50px;
     }
+}
 
-    .home {
+@media (max-width: 1000px) {
+    header {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        margin: 0 20px;
+
+        padding: 0px 0px 10px 0px;
     }
 
-    #Arnold {
-        width: 80%;
+    .logo a {
+        font-size: 3rem;
     }
 
-    .home h1 {
-        font-size: 70px;
+    .navbar {
+        margin-top: 10px;
+        display: inline-block;
     }
 
-    .home h2 {
-        font-size: 40px;
+    .navbar a, button {
+        margin: 0px 15px;
+        font-size: 1rem;
+    }
+
+    body {
+        padding-top: 80px;
     }
 }

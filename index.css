@@ -118,3 +118,31 @@
     transform: scale(1.2);
     color:#3982ff;
 }
+
+@media (max-width: 1500px) {
+    #Arnold {
+        width: 400px;
+        height: auto;
+    }
+    
+    .home h1 {
+        font-size: 70px;
+        margin-bottom: -15px;
+    }
+
+    .home h2 {
+        font-size: 40px;
+    }
+
+    .text_scroll {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
