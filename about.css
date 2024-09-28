@@ -1,0 +1,73 @@
+.about_me {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px 100px 50px 100px;
+    /* background-color: red; */
+ }
+ 
+ 
+ .about_me img {
+    width: 350px;
+    height: auto;  
+    border-radius: 10%;
+    filter: drop-shadow(0 0 1.2rem #4a4a4a);
+    /* object-fit: cover;
+    object-position: center; */
+ }
+ 
+ 
+ #arnold_jollibee {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+ }
+ 
+ 
+ .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+ }
+ 
+ 
+ .section1_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ 
+ .about_me h1 {
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-56px);
+    text-shadow: 0 0 10px #ffffff;
+    animation: flicker 500ms 2;
+ }
+ 
+ 
+ @keyframes flicker {
+    0% {opacity: 0.5;}
+    10% {opacity: 1;}
+    50% {opacity: 0.5;}
+    60% {opacity: 1;}
+ }
+ 
+ 
+ .about_me p {
+    font-size: 18px;
+    width: 600px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
